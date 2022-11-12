@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Impact</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,12 +17,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="news.html">News</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Characters</a>
@@ -47,9 +48,9 @@
                 <a class="nav-link" href="#">Redeem Code</a>
               </li>
             </ul>
-            <form>
-                <div class="navbar-text d-grid gap-2">
-                    <button class="btn btn-warning btn-lg" type="button">
+            <form class="d-flex justify-content-center align-items-center">
+                <div class="navbar-text d-sm-grid gap-sm-2 ">
+                    <button class="btn btn-warning btn-lg" type="button" style="width:300px;">
                         Download
                     </button>          
                 </div>
@@ -58,37 +59,45 @@
         </div>
       </nav>
 
-        <div class="container px-4">
+        <div class="container px-lg-5">
             <div class="row gx-1">
               <div class="col">
-               <div class="p-sm-3 mt-5">
-                <h1 class="display-2 mt-sm-5 p-sm-3">
+               <div class="p-sm-3 mt-5 ">
+                <h1 class="display-2 mt-sm-5 pr-sm-3">
                     Available on All Platforms
                 </h1>
-                <hr class="bg-warning btn-sm m-3" width="200">
+                <hr class="bg-warning btn-sm pr-sm-3" width="200">
                </div>
               </div>
               <div class="col">
-                <div class="p-sm-5 mt-lg-auto "><img src="Assets/klee.jpg" alt=""></div>
+                <div class="p-sm-5 "><img src="Assets/klee.jpg" alt=""></div>
               </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="download">
             <span class="display-6">Downloads</span>
             <hr class="bg-warning btn-sm" width="200">
             <div class="row d-flex justify-content-center">
                 <div class="col">
-                    <div class="p-3"><img src="Assets/ps5.png"></div>
+                    <div class="p-3"> 
+                      <a href="#"><img src="Assets/ps5.png"></a>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="p-3"><img src="Assets/appstore.png"></div>
+                    <div class="p-3">
+                      <a href="#"><img src="Assets/appstore.png"></a>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="p-3"><img src="Assets/googleplay.png"></div>
+                    <div class="p-3">
+                      <a href="#"><img src="Assets/googleplay.png"></a>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="p-3"><img src="Assets/windows.png"></div>
+                    <div class="p-3">
+                      <a href="#"><img src="Assets/windows.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +125,6 @@
             <h6 class="text-white fw-normal text-center fs-6 mt-sm-1">Copyright © COGNOSPHERE. All Rights Reserved.</h6>
           </div>
         </div>
-        
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
