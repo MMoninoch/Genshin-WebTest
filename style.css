@@ -1,9 +1,8 @@
 #card{
-    width: 25rem;
+    width: 28em;
     background-color: rgb(0,0,0,0.5); 
     border-radius: 10px;
     transition: 0.3s;
-    position: absolute;
 }
 #tran-card{
     padding: 0.5rem; 
@@ -12,7 +11,7 @@
 #card:hover {
     background-color: rgb(0,0,0,0.7); 
     transform: scale(1.04);
-    z-index: 2;
+    z-index: 1;
 }
 #newbutton {
     background-color: rgb(0,0,0,0.1); 
@@ -22,15 +21,17 @@
     background-color: #393b40;
     color: #f4d8a8;
     opacity: 100%;
-    z-index: 2;
 }
-#h-card{
-    margin-bottom: 100px;
+#h-card .card{
+    transition: 0.4s;
+}
+#h-card .card:hover{
+    background-color: rgb(0,0,0,0.1); 
+    transform: scale(1.01);
 }
 #more{
-    position: absolute; 
-    top: 1415px; 
-    width: 1250px;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     border-radius: 5px;
     border: none;
@@ -48,5 +49,19 @@
     z-index: 2;
 }
 .navbar{
-    background-color: rgb(0,0,0,0.7); 
+    background-color:rgb(41, 41, 41)
 }
+#footer a{
+    text-decoration: none;
+    color:rgb(131, 131, 131)
+}
+#footer a:hover{
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+@media screen and (max-width: 1408px) {
+    #hide-card {
+        display: none;
+    }
+}
+  
